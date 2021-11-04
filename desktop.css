@@ -325,6 +325,9 @@ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
     margin-right: 2px;
 }
 
+.main-post:hover {
+    background-color: rgba(211, 211, 211, 0.288);
+}
 
 /* ////////////////////////////////////////// */
 
@@ -381,3 +384,12 @@ header, .card .shadow {
     margin-left: 14px;
     margin-top: 6px;
 }  
+
+
+
+/* /////////////////////////////////////// */
+
+.title-category {
+    font-weight: 600;
+    font-size: 2rem;
+}
