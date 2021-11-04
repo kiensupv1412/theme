@@ -216,11 +216,10 @@ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
 
 .app-item {
     border-radius: 8px;
-    background: #efefef;
 }
 
 .grid {
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 
@@ -338,7 +337,7 @@ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
 
 
 .main-head {
-       max-width: 590px
+       max-width: 100%
     }
 
 
@@ -348,7 +347,6 @@ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
 
 .icon-head {
     border-radius: 8px;
-    background: #efefef;
 }
 
 .icon-head {
@@ -364,11 +362,18 @@ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
 .grid-head {
     --grid-col: 6;
     grid-template-columns: repeat(var(--grid-col), minmax(0, 1fr));
+    --bs-gutter-y: 1rem;
+    --bs-gutter-x: 3rem;
 }
 
 .shadow {
     -webkit-box-shadow: var(--shadow);
     box-shadow: var(--shadow);
+    width: max-content;
+}
+
+header, .card .shadow {
+    padding-left: 27rem;
 }
 
 .icon-head img {
