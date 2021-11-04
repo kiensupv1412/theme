@@ -1,0 +1,288 @@
+.lichamduong-wrapper {
+    padding: 15px
+}
+
+.tennam {
+    text-align: center;
+    font-size: 150%;
+    line-height: 120%;
+    font-weight: 700;
+    color: #000;
+    background-color: #ccc
+}
+
+.thang {
+    font-size: 14px;
+    padding: 1px;
+    border-collapse: collapse;
+    border: none;
+    line-height: 100%;
+    table-layout: fixed;
+    margin-bottom: 0
+}
+
+.tenthang {
+    text-align: center;
+    font-size: 125%;
+    line-height: 100%;
+    font-weight: 700;
+    color: #303;
+    background-color: #cfc
+}
+
+.ngaythang.empty-cell {
+    background-color: #eee
+}
+
+.homnay {
+    background-color: #fff000
+}
+
+.tet {
+    background-color: #fc9
+}
+
+.am {
+    text-align: right;
+    font-size: 13px;
+    line-height: 100%;
+    color: #676767
+}
+
+.am2 {
+    text-align: right;
+    font-size: 13px;
+    line-height: 100%;
+    color: #004080
+}
+
+.t2t6 {
+    text-align: left;
+    color: #000
+}
+
+.t7 {
+    text-align: left;
+    line-height: 100%;
+    color: green
+}
+
+#scr-lichamduong {
+    padding-bottom: 0;
+    border: none
+}
+
+.ngaytuan span {
+    background: #d0d0d0;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    height: 26px;
+    line-height: 26px
+}
+
+.ngaytuan.cn span, .ngaytuan.t7 span {
+    background: #935f37;
+    color: #fff
+}
+
+.btn-block {
+    display: block;
+    width: 100%
+}
+
+.weekday td {
+    border: none
+}
+
+.thang td.ngaythang:first-child {
+    padding-left: .5em
+}
+
+.thang td.ngaythang:last-child {
+    padding-right: .5em
+}
+
+.thang td, .thang th {
+    border-color: #b5b5b5;
+    font-size: 100%;
+    padding-left: 3px;
+    padding-right: 3px;
+    position: relative;
+}
+
+.lichamduong .col {
+    padding-bottom: 0
+}
+
+.lichamduong .lich-input {
+    border: none;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    height: 32px;
+    line-height: 33px
+}
+
+.btn-block.lich-input {
+    border-radius: 0;
+    min-height: unset;
+    background: #c25238!important
+}
+
+.current-day-wrapper {
+    font-size: 16px
+}
+
+.current-day-wrapper .current-day-text {
+    color: #935f37;
+    text-align: center;
+    font-size: 16px;
+    padding: 0;
+    margin-bottom: 10px
+}
+
+.current-day-wrapper table {
+    border-collapse: collapse;
+    margin-bottom: 0
+}
+
+.current-day-wrapper table td {
+    text-align: center;
+    font-size: 16px
+}
+
+.current-day-wrapper table td, .current-day-wrapper table th {
+    color: #000
+}
+
+.current-day-wrapper table thead td {
+    border-bottom: 1px solid #b5b5b5
+}
+
+.current-day-wrapper table tbody td {
+    border: 1px solid #b5b5b5
+}
+
+.current-day-wrapper .day-info .first {
+    font-size: 48px;
+    font-weight: 700
+}
+
+.current-day-wrapper .day-info .last {
+    text-transform: uppercase;
+    font-weight: 700
+}
+
+.current-day-lunar, .color-orange {
+    color: #935f37!important
+}
+
+.current-day-wrapper table tr.lunar-info-extra td {
+    font-size: 14px
+}
+
+/* /////////////////////////////////////////// */
+
+@media screen and (min-width: 850px) {
+    .col+.col .col-inner {
+        margin-right: auto;
+        margin-left: 0;
+    }
+}
+
+.darkblock.widget-style-2, .tagcloud {
+    background: #ffefd3;
+}
+
+.darkblock {
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.col-inner {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+
+.darkblock h2, .lighttitle {
+    text-align: center;
+    background: #c25238;
+    color: #fff;
+    padding: 10px 0;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: TUV Noh Carbone;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.row, .gallery {
+    width: 100%;
+    -js-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.section {
+    padding: 30px 0;
+    position: relative;
+    min-height: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+th, td {
+    padding: 0.5 em;
+    text-align: left;
+    border-bottom: 1 px solid #ececec;
+    line-height: 1.3;
+    font-size: .9em;
+}
+
+td.ngaythang.hoangdao:after {
+    content: "";
+    position: absolute;
+    height: 5 px;
+    width: 5 px;
+    background: red;
+    left: 6 px;
+    border-radius: 5 px;
+    display: inline-block;
+}
+
+td.ngaythang.hacdao:after {
+    content: "";
+    position: absolute;
+    height: 5 px;
+    width: 5 px;
+    background: #000;
+    left: 6 px;
+    border-radius: 5 px;
+    display: inline-block;
+}
