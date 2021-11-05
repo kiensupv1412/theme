@@ -45,7 +45,7 @@ list-style-type: none;
 }
 
 ul li a:hover {
-            background-color: #d1d1d1;
+background: #e8e9eb;
         }
 
 *,
@@ -54,29 +54,6 @@ ul li a:hover {
 box-sizing: border-box;
 }
 
-
-.list>ul {
-margin-left: -2.7rem;
-list-style-type: none;
-width: 15rem;
-left: -2rem;
-height: 100%;
-display: block;
-}
-
-
-
-.list>ul li a {
-display: block;
-color: white;
-text-align: center;
-text-decoration: none;
-}
-
-.list>ul li a:hover {
-background: #e8e9eb;
-border-radius: 8px;
-}
 
 img {
 width: 2rem;
@@ -90,16 +67,96 @@ display: flex;
 align-items: center;
 border-radius: 8px;
 }
+.sidebar::-webkit-scrollbar-thumb {
+    background: none;
+}
 
-.list>ul:hover::-webkit-scrollbar-thumb {
-border-radius: 10px;
-background: rgba(136, 136, 136, 0.568);
+.sidebar:hover::-webkit-scrollbar-thumb {
+    background: #e8e9eb;
+    border-radius: 10px;
 }
 
 
-.list>ul::-webkit-scrollbar {
+.sidebar::-webkit-scrollbar {
 width: 5px;
 }
+
+.main-content::-webkit-scrollbar {
+width: 8px;
+}
+.main-content:hover::-webkit-scrollbar-thumb {
+    background: #e8e9eb;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-head>ul {
+            list-style-type: none;
+            padding-left: 0;
+            position: fixed;
+        }
+
+        .main-head>ul li {
+            float: left;
+        }
+
+        .main-head>ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .main-head>ul li a:hover {
+            background-color: #d1d1d1;
+        }
+
+        .main-head>ul li a img {
+            width: 2rem;
+        }
+
+        .icon-head>.item-thumbnail {
+            width: 4rem;
+            height: 2.8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+        }
+
+        .main-head {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .main {
+            display: flex;
+        }
+
 </style>
 
 <script async="" defer="" src=".//head/page.js"></script>
@@ -119,18 +176,41 @@ width: 5px;
 <div id="overlay-under-drawer"></div>
 
 <header id="title">
-  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
-  <ol class="breadcrumbs gt-separated dark hidden-xs">
-    <li><a href="index.html">Flutter</a></li>
-    <li><a href="widgets/widgets-library.html">widgets</a></li>
-    <li class="self-crumb">SingleChildScrollView class</li>
-  </ol>
-  <div class="self-name">SingleChildScrollView</div>
-  <form class="search navbar-right" role="search">
-    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
-  </form>
-</header>
+    <ul class="breadcrumbs gt-separated dark hidden-xs">
+        <li class="icon-head">
+            <a class="item-thumbnail" href="https://tuvibattu.vn/lich-am-duong">
+                <img alt="" src="./image/lich-am-duong.png"></a>
 
+
+        </li>
+        <li class="icon-head">
+            <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-vi">
+                <img alt="" src="./image/la-so-tu-vi.png"></a>
+
+
+        </li>
+        <li class="icon-head">
+            <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-tru">
+                <img alt="" src="./image/la-so-tu-tru.png"></a>
+
+
+        </li>
+        <li class="icon-head">
+            <a class="item-thumbnail" href="https://tuvibattu.vn/xem-tinh-duyen">
+                <img alt="" src="./image/boi-tinh-duyen.png"></a>
+
+
+        </li>
+        <li class="icon-head">
+            <a class="item-thumbnail" href="https://tuvibattu.vn/quy-coc-doan-menh">
+                <img alt="" src="./image/quy-coc-doan-menh.png"></a>
+
+        </li>
+    </ul>
+  <!-- <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form> -->
+</header>
 <main>
 
 
@@ -145,6 +225,25 @@ width: 5px;
     
 <section class="desc markdown">
   <p>A box in which a single widget can be scrolled.</p>
+<p>This widget is useful when you have a single box that will normally be
+entirely visible, for example a clock face in a time picker, but you need to
+make sure it can be scrolled if the container gets too small in one axis
+(the scroll direction).</p>
+<p>It is also useful if you need to shrink-wrap in both axes (the main
+scrolling direction as well as the cross axis), as one might see in a dialog
+or pop-up menu. In that case, you might pair the 
+      
+A box in which a single widget can be scrolled.</p>
+<p>This widget is useful when you have a single box that will normally be
+entirely visible, for example a clock face in a time picker, but you need to
+make sure it can be scrolled if the container gets too small in one axis
+(the scroll direction).</p>
+<p>It is also useful if you need to shrink-wrap in both axes (the main
+scrolling direction as well as the cross axis), as one might see in a dialog
+or pop-up menu. In that case, you might pair the 
+           
+</p>
+<p>A box in which a single widget can be scrolled.</p>
 <p>This widget is useful when you have a single box that will normally be
 entirely visible, for example a clock face in a time picker, but you need to
 make sure it can be scrolled if the container gets too small in one axis
@@ -461,14 +560,6 @@ or pop-up menu. In that case, you might pair the
 
 </main>
 
-<footer>
-  <span class="no-break">
-    Flutter
-      0.0.0
-  </span>
-
-  <script src=".//footer.js"></script>
-</footer>
 
 
 
