@@ -11,7 +11,7 @@ body {
 body {
     margin: 0;
 }
-
+    
 /* *, ::before, ::after {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -52,8 +52,9 @@ a, a:hover {
 }
 
 .card {
-    border-radius: var(--card-radius, 1rem);
-    background-color: var(--card-bg, #fff);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color:#fff;
 }
 
 .app-body {
@@ -168,7 +169,7 @@ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
 }
 
 @media (min-width:576px) {
-    .container {
+    .main-site {
         max-width: 40%;
         font-size: 1.6rem;
     }
@@ -179,7 +180,7 @@ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
 }
 
 @media (min-width: 768px) {
-.container {
+.main-site {
     max-width: 100%;
     font-size: 1.6rem; }
     .sidebar-right {
@@ -188,7 +189,7 @@ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
 }
 
 @media (min-width: 935px) {
-    .container {
+    .main-site {
         max-width: 40%;
         font-size: 1.6rem;
      }
@@ -196,7 +197,7 @@ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
         display: block;
     }}
 
-.container {
+.main-site {
         margin-left: 28rem;
         padding-right: 22px;
     }
@@ -216,10 +217,6 @@ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
 
 .app-item {
     border-radius: 8px;
-}
-
-.grid {
-    margin-top: 1rem;
 }
 
 
@@ -271,7 +268,7 @@ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
     overflow: scroll;
 }
 
-.container {
+.main-site {
     position: fixed;
     height: 100%;
     overflow: scroll;
@@ -283,7 +280,7 @@ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
     background: rgba(136, 136, 136, 0.568);
 }
 
-.container:hover::-webkit-scrollbar-thumb {
+.main-site:hover::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background: none;
 }
@@ -332,20 +329,19 @@ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
 /* ////////////////////////////////////////// */
 
 
-.icon-head {
-    font-size: 1.1rem;
-    line-height: 20px;
-    margin-bottom: 2px;
-}
-
-
 .main-head {
-       max-width: 100%
+       max-width: 100%;
+       position: fixed;
+       z-index: 9999;
     }
 
 
 .icon-head:hover {
     background: rgba(136, 136, 136, 0.24);
+}
+
+.icon-head center {
+    padding-top: 0.5em;
 }
 
 .icon-head {
@@ -381,8 +377,6 @@ header, .card .shadow {
 
 .icon-head img {
     width: 28px;
-    margin-left: 14px;
-    margin-top: 6px;
 }  
 
 

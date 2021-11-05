@@ -4,9 +4,6 @@
 <head>
     <title>theme tử vi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./desktop.css" media="all" data-minify="1" />
-    <link rel="stylesheet" href="./css.css" media="all" data-minify="1" />
-
     <link
         href='//fonts.googleapis.com/css?family=Inter%3Aregular%2C700%2Cregular%2C600%7CDancing+Script%3Aregular%2C400&#038;display=swap&#038;ver=3.9'
         type='text/css' />
@@ -15,6 +12,8 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&amp;display=swap" rel="stylesheet">
     <style>
+
+
         img {
 
             transition: transform 250ms;
@@ -24,6 +23,11 @@
             transform: translateY(-5px);
         }
 
+        ul {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
         *,
         ::after,
         ::before {
@@ -31,437 +35,375 @@
         }
 
 
-
-        .col {
-            position: relative;
-            width: 100%;
-            /* padding-right: 15px; */
-            padding-left: 15px;
+        .list>ul {
+            margin-left: -2.7rem;
+            list-style-type: none;
+            width: 15rem;
+            left: -2rem;
+            height: 100%;
+            display: block;
         }
+
+
+
+        .list>ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .list>ul li a:hover {
+            background: #e8e9eb;
+            border-radius: 8px;
+        }
+
+        img {
+            width: 2rem;
+        }
+
+        .icon-bar>.item-thumbnail {
+            height: 2.8rem;
+            padding-left: 5px;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            border-radius: 8px;
+        }
+
+        .list>ul:hover::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background: rgba(136, 136, 136, 0.568);
+        }
+
+
+        .list>ul::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        /* .sidebar-left::-webkit-scrollbar-thumb  {
+    border-radius: 10px;
+    background: rgba(136, 136, 136, 0.568);
+} */
+
+        .main-head>ul {
+            list-style-type: none;
+            padding-left: 0;
+            position: fixed;
+        }
+
+        .main-head>ul li {
+            float: left;
+        }
+
+        .main-head>ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .main-head>ul li a:hover {
+            background-color: #d1d1d1;
+        }
+
+        .main-head>ul li a img {
+            width: 2rem;
+        }
+
+        .icon-head>.item-thumbnail {
+            width: 4rem;
+            height: 2.8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+        }
+
+        .main-head {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .main {
+            display: flex;
+        }
+
+
+  
+@media (max-width: 414px) {
+.list {
+        display: none;
+    }
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
     </style>
 </head>
 
 <body>
-    <header class="main-head">
-        <div class="card shadow">
-            <div class="grid grid-head">
-                <div class="icon-head">
-                        <a class="item-thumbnail" href="https://tuvibattu.vn/lich-am-duong">
-                            <img alt="" src="./image/lich-am-duong.png"></a>
+    <header>
+        <div class="main-head">
+            <ul>
 
-
-                </div>
-                <div class="icon-head">
-                        <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-vi">
-                            <img alt="" src="./image/la-so-tu-vi.png"></a>
-
-
-                </div>
-                <div class="icon-head">
-                        <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-tru">
-                            <img alt="" src="./image/la-so-tu-tru.png"></a>
-
-
-                </div>
-                <div class="icon-head">
-                        <a class="item-thumbnail" href="https://tuvibattu.vn/xem-tinh-duyen">
-                            <img alt="" src="./image/boi-tinh-duyen.png"></a>
-
-
-                </div>
-                <div class="icon-head">
-                        <a class="item-thumbnail" href="https://tuvibattu.vn/quy-coc-doan-menh">
-                            <img alt="" src="./image/quy-coc-doan-menh.png"></a>
-
-                </div>
-                <div class="icon-head">
-                        <a class="item-thumbnail" href="https://tuvibattu.vn/can-xuong-tinh-so">
-                            <img alt="" src="./image/can-xuong-tinh-so.png"></a>
-
-
-                </div>
-             
-            </div>
-
-        </div>
-
-    </header>
-    <div class="fullpage">
-        <div class="sidebar-left">
-            <div class="side-item">
-                <div class="flex">
-                    <a class="item-thumbnail" href="https://tuvibattu.vn/dao-hoc-xu-the">
-                        <img width="150" height="150" alt="" src="./image/dao-hoc.png"></a>
-                    <div class="item-content col">
-                        <h3 class="item-heading"><a href="https://tuvibattu.vn/dao-hoc-xu-the">Đạo học Xử thế</a>
-                        </h3>
-                        <div class="item-text">
-                            <p>Xem trang cá nhân của bạn</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="side-item">
-                <div class="flex">
-                    <a class="item-thumbnail" href="https://tuvibattu.vn/dao-hoc-xu-the">
-                        <img width="150" height="150" alt="" src="./image/dao-hoc.png"></a>
-                    <div class="item-content col">
-                        <h3 class="item-heading"><a href="https://tuvibattu.vn/dao-hoc-xu-the">Đạo học Xử thế</a>
-                        </h3>
-                        <div class="item-text">
-                            <p>Xem trang cá nhân của bạn</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="side-item">
-                <div class="flex">
+                <li class="icon-head">
                     <a class="item-thumbnail" href="https://tuvibattu.vn/lich-am-duong">
-                        <img width="150" height="150" alt="" src="./image/lich-am-duong.png"></a>
-                    <div class="item-content col">
-                        <h3 class="item-heading"><a href="https://tuvibattu.vn/lich-am-duong">Lịch âm dương</a>
-                        </h3>
-                        <!-- <div class="item-text">
-                                                <p>Xem ngày tốt, đổi ngày âm dương</p>
-                                            </div> -->
-                    </div>
+                        <img alt="" src="./image/lich-am-duong.png"></a>
 
-                </div>
-            </div>
-            <div class="side-item">
-                <div class="item-inner flex">
+
+                </li>
+                <li class="icon-head">
                     <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-vi">
-                        <img width="150" height="150" alt="" src="./image/la-so-tu-vi.png"></a>
-                    <div class="item-content col">
-                        <h3 class="item-heading"><a href="https://tuvibattu.vn/la-so-tu-vi">
-                                Lá số tử vi</a>
-                        </h3>
-                        <!-- <div class="item-text">
-                                                <p>Phần mềm xem tử vi và bình giải</p>
-                                            </div> -->
-                    </div>
+                        <img alt="" src="./image/la-so-tu-vi.png"></a>
 
-                </div>
-            </div>
-            <div class="side-item">
-                <div class="item-inner flex">
+
+                </li>
+                <li class="icon-head">
                     <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-tru">
-                        <img width="150" height="150" alt="" src="./image/la-so-tu-tru.png"></a>
-                    <div class="item-content col">
-                        <h3 class="item-heading"><a href="https://tuvibattu.vn/la-so-tu-tru">
-                                Lá số Tứ trụ</a>
-                        </h3>
-                        <!-- <div class="item-text">
-                                                <p>Xem Tứ trụ và bình giải</p>
-                                            </div> -->
-                    </div>
+                        <img alt="" src="./image/la-so-tu-tru.png"></a>
 
-                </div>
-            </div>
-            <div class="side-item">
-                <div class="item-inner flex">
+
+                </li>
+                <li class="icon-head">
                     <a class="item-thumbnail" href="https://tuvibattu.vn/xem-tinh-duyen">
-                        <img width="150" height="150" alt="" src="./image/boi-tinh-duyen.png"></a>
-                    <div class="item-content col">
-                        <h3 class="item-heading"><a href="https://tuvibattu.vn/xem-tinh-duyen">Bói tình
-                                duyên</a>
-                        </h3>
-                        <!-- <div class="item-text">
-                                                <p>Tình duyên hôn nhân</p>
-                                            </div> -->
-                    </div>
+                        <img alt="" src="./image/boi-tinh-duyen.png"></a>
 
-                </div>
-            </div>
-            <div class="side-item">
-                <div class="item-inner flex">
+
+                </li>
+                <li class="icon-head">
                     <a class="item-thumbnail" href="https://tuvibattu.vn/quy-coc-doan-menh">
-                        <img width="150" height="150" alt="" src="./image/quy-coc-doan-menh.png"></a>
-                    <div class="item-content col">
-                        <h3 class="item-heading"><a href="https://tuvibattu.vn/quy-coc-doan-menh">Lá sô quỷ
-                                cốc</a>
-                        </h3>
-                        <!-- <div class="item-text">
-                                                <p>Lá số quỷ cốc đoán mệnh</p>
-                                            </div> -->
-                    </div>
+                        <img alt="" src="./image/quy-coc-doan-menh.png"></a>
 
-                </div>
-            </div>
-            <div class="side-item">
-                <div class="item-inner flex">
-                    <a class="item-thumbnail" href="https://tuvibattu.vn/can-xuong-tinh-so">
-                        <img width="150" height="150" alt="" src="./image/can-xuong-tinh-so.png"></a>
-                    <div class="item-content col">
-                        <h3 class="item-heading"><a href="https://tuvibattu.vn/can-xuong-tinh-so">Cân xương số
-                            </a>
-                        </h3>
-                        <!-- <div class="item-text">
-                                                <p>Cân xương số đoán mệnh</p>
-                                            </div> -->
-                    </div>
-
-                </div>
-            </div>
-            <div class="side-item">
-                <div class="item-inner flex">
-                    <a class="item-thumbnail" href="https://tuvibattu.vn/boi-bai-tarot">
-                        <img width="150" height="150" alt="" src="./image/boi-bai-tarot.png"></a>
-                    <div class="item-content col">
-                        <h3 class="item-heading"><a href="https://tuvibattu.vn/boi-bai-tarot">Bói bài tarot</a>
-                        </h3>
-                        <!-- <div class="item-text">
-                                                <p>Xem bói tarot</p>
-                                            </div> -->
-                    </div>
-
-                </div>
-            </div>
-            <div class="side-item">
-                <div class="item-inner flex">
-                    <a class="item-thumbnail" href="https://tuvibattu.vn/boi-bai-tay">
-                        <img width="150" height="150" alt="" src="./image/boi-bai.png"></a>
-                    <div class="item-content col">
-                        <h3 class="item-heading"><a href="https://tuvibattu.vn/boi-bai-tay">Bói bài
-                                tây</a>
-                        </h3>
-                        <!-- <div class="item-text">
-                                                <p>Xem bói bài tây</p>
-                                            </div> -->
-                    </div>
-
-                </div>
-            </div>
-            <div class="side-item">
-                <div class="item-inner flex">
-                    <a class="item-thumbnail" href="https://tuvibattu.vn/boi-bai-hang-ngay">
-                        <img width="150" height="150" alt="" src="./image/boi-bai-tarot.png"></a>
-                    <div class="item-content col">
-                        <h3 class="item-heading"><a href="https://tuvibattu.vn/boi-bai-hang-ngay">
-                                Tarot hôm nay
-                            </a>
-                        </h3>
-                        <!-- <div class="item-text">
-                                                <p>Xem lá bài tarot ngày hôm nay</p>
-                                            </div> -->
-                    </div>
-
-                </div>
-            </div>
-            <div class="side-item">
-                <div class="item-inner flex">
-                    <a class="item-thumbnail" href="https://tuvibattu.vn/tu-vi-2022">
-                        <img width="150" height="150" alt="" src="./image/tu-vi-nam-2022.png"></a>
-                    <div class="item-content col">
-                        <h3 class="item-heading"><a href="https://tuvibattu.vn/tu-vi-2022"> Tử Vi
-                                2022</a>
-                        </h3>
-                        <!-- <div class="item-text">
-                                                <p>Xem Tử Vi năm 2022</p>
-                                            </div> -->
-                    </div>
-
-                </div>
-            </div>
-            <div class="side-item">
-                <div class="item-inner flex">
-                    <a class="item-thumbnail" href="https://tuvibattu.vn/tu-vi-12-cung-hoang-dao">
-                        <img width="150" height="150" alt="" src="./image/12-cung-hoang-dao.png"></a>
-                    <div class="item-content col">
-                        <h3 class="item-heading"><a href="https://tuvibattu.vn/tu-vi-12-cung-hoang-dao">12 hoàng
-                                đạo</a>
-                        </h3>
-                        <!-- <div class="item-text">
-                                                <p>Cung hoàng đạo hàng ngày</p>
-                                            </div> -->
-                    </div>
-
-                </div>
-            </div>
-            <div class="side-item">
-                <div class="item-inner flex">
-                    <a class="item-thumbnail" href="https://tuvibattu.vn/dao-hoc-xu-the">
-                        <img width="150" height="150" alt="" src="./image/dao-hoc.png"></a>
-                    <div class="item-content col">
-                        <h3 class="item-heading"><a href="https://tuvibattu.vn/dao-hoc-xu-the">Đạo học Xử
-                                thế</a>
-                        </h3>
-                        <!-- <div class="item-text">
-                                                <p>Nghệ thuật xử thế</p>
-                                            </div> -->
-                    </div>
-
-                </div>
-            </div>
-            <div class="side-item">
-                <div class="item-inner flex">
-                    <a class="item-thumbnail" href="https://tuvibattu.vn/dao-hoc-xu-the">
-                        <img width="150" height="150" alt="" src="./image/dao-hoc.png"></a>
-                    <div class="item-content col">
-                        <h3 class="item-heading"><a href="https://tuvibattu.vn/dao-hoc-xu-the">Đạo học Xử
-                                thế</a>
-                        </h3>
-                        <!-- <div class="item-text">
-                                                <p>Nghệ thuật xử thế</p>
-                                            </div> -->
-                    </div>
-
-                </div>
-            </div>
-            <div class="side-item">
-                <div class="item-inner flex">
-                    <a class="item-thumbnail" href="https://tuvibattu.vn/dao-hoc-xu-the">
-                        <img width="150" height="150" alt="" src="./image/dao-hoc.png"></a>
-                    <div class="item-content col">
-                        <h3 class="item-heading"><a href="https://tuvibattu.vn/dao-hoc-xu-the">Đạo học Xử
-                                thế</a>
-                        </h3>
-                        <!-- <div class="item-text">
-                                                <p>Nghệ thuật xử thế</p>
-                                            </div> -->
-                    </div>
-
-                </div>
-            </div>
-            <div class="side-item">
-                <div class="item-inner flex">
-                    <a class="item-thumbnail" href="https://tuvibattu.vn/dao-hoc-xu-the">
-                        <img width="150" height="150" alt="" src="./image/dao-hoc.png"></a>
-                    <div class="item-content col">
-                        <h3 class="item-heading"><a href="https://tuvibattu.vn/dao-hoc-xu-the">Đạo học Xử
-                                thế</a>
-                        </h3>
-                        <!-- <div class="item-text">
-                                                <p>Nghệ thuật xử thế</p>
-                                            </div> -->
-                    </div>
-
-                </div>
-            </div>
-            <div class="side-item">
-                <div class="item-inner flex">
-                    <a class="item-thumbnail" href="https://tuvibattu.vn/dao-hoc-xu-the">
-                        <img width="150" height="150" alt="" src="./image/dao-hoc.png"></a>
-                    <div class="item-content col">
-                        <h3 class="item-heading"><a href="https://tuvibattu.vn/dao-hoc-xu-the">Đạo học Xử
-                                thế</a>
-                        </h3>
-                        <!-- <div class="item-text">
-                                                <p>Nghệ thuật xử thế</p>
-                                            </div> -->
-                    </div>
-
-                </div>
-            </div>
-            <div class="side-item">
-                <div class="item-inner flex">
-                    <a class="item-thumbnail" href="https://tuvibattu.vn/dao-hoc-xu-the">
-                        <img width="150" height="150" alt="" src="./image/dao-hoc.png"></a>
-                    <div class="item-content col">
-                        <h3 class="item-heading"><a href="https://tuvibattu.vn/dao-hoc-xu-the">Đạo học Xử
-                                thế</a>
-                        </h3>
-                        <!-- <div class="item-text">
-                                                <p>Nghệ thuật xử thế</p>
-                                            </div> -->
-                    </div>
-
-                </div>
-            </div>
-            <div class="side-item">
-                <div class="item-inner flex">
-                    <a class="item-thumbnail" href="https://tuvibattu.vn/dao-hoc-xu-the">
-                        <img width="150" height="150" alt="" src="./image/dao-hoc.png"></a>
-                    <div class="item-content col">
-                        <h3 class="item-heading"><a href="https://tuvibattu.vn/dao-hoc-xu-the">Đạo học Xử
-                                thế</a>
-                        </h3>
-                        <!-- <div class="item-text">
-                                                <p>Nghệ thuật xử thế</p>
-                                            </div> -->
-                    </div>
-
-                </div>
-            </div>
-            <div class="side-item">
-                <div class="item-inner flex">
-                    <a class="item-thumbnail" href="https://tuvibattu.vn/dao-hoc-xu-the">
-                        <img width="150" height="150" alt="" src="./image/dao-hoc.png"></a>
-                    <div class="item-content col">
-                        <h3 class="item-heading"><a href="https://tuvibattu.vn/dao-hoc-xu-the">Đạo học Xử
-                                thế</a>
-                        </h3>
-                        <!-- <div class="item-text">
-                                                <p>Nghệ thuật xử thế</p>
-                                            </div> -->
-                    </div>
-
-                </div>
-            </div>
-            <div class="side-item">
-                <div class="item-inner flex">
-                    <a class="item-thumbnail" href="https://tuvibattu.vn/dao-hoc-xu-the">
-                        <img width="150" height="150" alt="" src="./image/dao-hoc.png"></a>
-                    <div class="item-content col">
-                        <h3 class="item-heading"><a href="https://tuvibattu.vn/dao-hoc-xu-the">Đạo học Xử
-                                thế</a>
-                        </h3>
-                        <!-- <div class="item-text">
-                                                <p>Nghệ thuật xử thế</p>
-                                            </div> -->
-                    </div>
-
-                </div>
-            </div>
-            <div class="side-item">
-                <div class="item-inner flex">
-                    <a class="item-thumbnail" href="https://tuvibattu.vn/dao-hoc-xu-the">
-                        <img width="150" height="150" alt="" src="./image/dao-hoc.png"></a>
-                    <div class="item-content col">
-                        <h3 class="item-heading"><a href="https://tuvibattu.vn/dao-hoc-xu-the">Đạo học Xử
-                                thế</a>
-                        </h3>
-                        <!-- <div class="item-text">
-                                                <p>Nghệ thuật xử thế</p>
-                                            </div> -->
-                    </div>
-
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
-        <div class="container">
-            
+    </header>
+    <div class="main">
+    <div class="list" id="scroll-left">
+        <ul>
 
-            <!-- <div><span>
-                                <p>The past few months have been exciting for 6to5. We’ve gone from being an educational
-                                    project to having 100k downloads on npm, there’s been 1,800 commits and 155
-                                    releases, we now support every major JavaScript build system, and recently we became
-                                    a Sprockets 4.0 default. To top it off, our new website and documentation received
-                                    tens of thousands of pageviews, and has been featured by several publications
-                                    including JavaScript Weekly.</p>
-                                truncate
-                                <p>(Source: npm, includes 5-day moving point
-                                    average)</p>
-                                <p>And we’re just getting started...</p>
-                                <p>6to5’s mission is to take future versions of JavaScript and compile them into spec
-                                    compliant, performant, and readable JavaScript files you can run today. With
-                                    built-in support for JSX and Flow Types, 6to5 provides a lot more than other
-                                    transpilers.</p>
-                                <p>Our top priority is eliminating any barriers to ES6+ adoption, and while 6to5 may be
-                                    the most feature-ready ES6 transpiler out there right now, there are other great
-                                    projects attempting to do the same. Traceur Compiler is the most common alternative
-                                    to our compiler, but it’s also the most different since it relies heavily on a
-                                    runtime. Other alternatives with similar approach to 6to5 include: es6-transpiler,
-                                    es6now, jstransform, and esnext.</p>
-                                <p>esnext is the closest 6to5 in it’s aim. With a focus on creating a smarter transpiler
-                                    that can create higher quality ES5-compatible output, both projects are easy to get
-                                    started with, and both care deeply about creating the best tool for developers.</p>
-                                <p>A few weeks back, Stefan Penner reached out to us hoping that, because we share the
-                                    same mission, we might be able to unite our efforts. Excited by the idea, we quickly
-                                    scheduled a meeting to discuss what that might mean.</p>
-                                <p>The meeting went well:</p>
-                            </span>
-                        </div> -->
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/lich-am-duong">
+                    <img alt="" src="./image/lich-am-duong.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-vi">
+                    <img alt="" src="./image/la-so-tu-vi.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-tru">
+                    <img alt="" src="./image/la-so-tu-tru.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/xem-tinh-duyen">
+                    <img alt="" src="./image/boi-tinh-duyen.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/quy-coc-doan-menh">
+                    <img alt="" src="./image/quy-coc-doan-menh.png"></a>
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/can-xuong-tinh-so">
+                    <img alt="" src="./image/can-xuong-tinh-so.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/lich-am-duong">
+                    <img alt="" src="./image/lich-am-duong.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-vi">
+                    <img alt="" src="./image/la-so-tu-vi.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-tru">
+                    <img alt="" src="./image/la-so-tu-tru.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/xem-tinh-duyen">
+                    <img alt="" src="./image/boi-tinh-duyen.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/quy-coc-doan-menh">
+                    <img alt="" src="./image/quy-coc-doan-menh.png"></a>
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/can-xuong-tinh-so">
+                    <img alt="" src="./image/can-xuong-tinh-so.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/lich-am-duong">
+                    <img alt="" src="./image/lich-am-duong.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-vi">
+                    <img alt="" src="./image/la-so-tu-vi.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-tru">
+                    <img alt="" src="./image/la-so-tu-tru.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/xem-tinh-duyen">
+                    <img alt="" src="./image/boi-tinh-duyen.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/quy-coc-doan-menh">
+                    <img alt="" src="./image/quy-coc-doan-menh.png"></a>
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/can-xuong-tinh-so">
+                    <img alt="" src="./image/can-xuong-tinh-so.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/lich-am-duong">
+                    <img alt="" src="./image/lich-am-duong.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-vi">
+                    <img alt="" src="./image/la-so-tu-vi.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-tru">
+                    <img alt="" src="./image/la-so-tu-tru.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/xem-tinh-duyen">
+                    <img alt="" src="./image/boi-tinh-duyen.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/quy-coc-doan-menh">
+                    <img alt="" src="./image/quy-coc-doan-menh.png"></a>
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/can-xuong-tinh-so">
+                    <img alt="" src="./image/can-xuong-tinh-so.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/lich-am-duong">
+                    <img alt="" src="./image/lich-am-duong.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-vi">
+                    <img alt="" src="./image/la-so-tu-vi.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-tru">
+                    <img alt="" src="./image/la-so-tu-tru.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/xem-tinh-duyen">
+                    <img alt="" src="./image/boi-tinh-duyen.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/quy-coc-doan-menh">
+                    <img alt="" src="./image/quy-coc-doan-menh.png"></a>
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/can-xuong-tinh-so">
+                    <img alt="" src="./image/can-xuong-tinh-so.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/lich-am-duong">
+                    <img alt="" src="./image/lich-am-duong.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-vi">
+                    <img alt="" src="./image/la-so-tu-vi.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-tru">
+                    <img alt="" src="./image/la-so-tu-tru.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/xem-tinh-duyen">
+                    <img alt="" src="./image/boi-tinh-duyen.png"></a>
+
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/quy-coc-doan-menh">
+                    <img alt="" src="./image/quy-coc-doan-menh.png"></a>
+
+            </li>
+            <li class="icon-bar">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/can-xuong-tinh-so">
+                    <img alt="" src="./image/can-xuong-tinh-so.png"></a>
+
+
+            </li>
+
+        </ul>
+    </div>
+        <div class="main-site"   id="scroll-main">
+            
             <div class="">
                 <div class="top-category">
                     <div class="category">
@@ -469,15 +411,15 @@
                         </div>
                     </div>
                     <div class="wraper-post">
-                        <div class="main-post">
+                        <div class="main-post" onclick="window.location='https://tuvibattu.vn/tin-tuc';"style="cursor: pointer;">
                             <div class="new-post">
-                                <div class="title-post"><a href="/blog/lap-trinh-huong-doi-tuong-oop.html">
+                                <div class="title-post"><a href="https://tuvibattu.vn/tin-tuc">
                                         <h3>Lập trình hướng đối tượng oop</h3>
                                     </a>
                                     <p>Hôm nay mình sẽ chia sẻ 1 chủ đề vô cùng quen thuộc với hầu hết các lập trình
                                         viên - Lập trình hướng đối tượng(định nghĩa, 4 tính chất oop, ví dụ demo).</p>
                                 </div>
-                                <div class="thumb-post"><a href="/blog/lap-trinh-huong-doi-tuong-oop.html"><img
+                                <div class="thumb-post"><a href="https://tuvibattu.vn/tin-tuc"><img
                                             src="image/tuvi-2022.jpg" alt="Lập trình hướng đối tượng oop"></a>
                                 </div>
                             </div>
@@ -562,7 +504,7 @@
                 </div>
             </div>
         </div>
-        <div class="sidebar-right">
+     <div class="sidebar-right" id="scroll-right">
            
             <div class="wraper-post">
                 <div class="main-post">
@@ -747,7 +689,40 @@
         </div>
 
     </div>
-    </div>
+    <footer>
+        <span>Hôm nay mình sẽ chia sẻ 1 chủ đề vô cùng quen thuộc với hầu hết các lập trình
+            viên - Lập trình hướng đối tượng(định nghĩa, 4 tính chất oop, ví dụ demo).Hôm nay mình sẽ chia sẻ 1 chủ đề vô cùng quen thuộc với hầu hết các lập trình
+                viên - Lập trình hướng đối tượng(định nghĩa, 4 tính chất oop, ví dụ demo).Hôm nay mình sẽ chia sẻ 1 chủ đề vô cùng quen thuộc với hầu hết các lập trình
+                    viên - Lập trình hướng đối tượng(định nghĩa, 4 tính chất oop, ví dụ demo).Hôm nay mình sẽ chia sẻ 1 chủ đề vô cùng quen thuộc với hầu hết các lập trình
+                       </span>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.7/jquery.slimscroll.js"></script>
+<script>
+    $(function(){
+    $('#scroll-left').slimScroll({
+        height: '500px'
+    });
+});
+</script>
+<script>
+    $(function(){
+    $('#scroll-main').slimScroll({
+        height: '500px'
+    });
+});
+</script>
+<script>
+    $(function(){
+    $('#scroll-right').slimScroll({
+        height: '500px'
+    });
+});
+</script>
 </body>
 
 </html>
+
+<div class="icon-head" onclick="window.location='https://tuvibattu.vn/lich-am-duong';" style="cursor: pointer;">
