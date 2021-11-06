@@ -1,31 +1,27 @@
-/*
- *
- *  Update script.js versions in all lib/templates when modifying this file!
- *
- */
-function initSideNav() {
-    const leftNavToggle = document.getElementById('sidenav-left-toggle');
-    const leftDrawer = document.querySelector('.sidebar-offcanvas-left');
-    const overlay = document.getElementById('overlay-under-drawer');
+
+// function initSideNav() {
+    // const leftNavToggle = document.getElementById('sidenav-left-toggle');
+    // const leftDrawer = document.querySelector('.sidebar-offcanvas-left');
+    // const overlay = document.getElementById('overlay-under-drawer');
   
-    function toggleBoth() {
-      if (leftDrawer) {
-        leftDrawer.classList.toggle('active');
-      }
+    // function toggleBoth() {
+    //   if (leftDrawer) {
+    //     leftDrawer.classList.toggle('active');
+    //   }
   
-      if (overlay) {
-        overlay.classList.toggle('active');
-      }
-    }
+    //   if (overlay) {
+    //     overlay.classList.toggle('active');
+    //   }
+    // }
   
-    if (overlay) {
-      overlay.addEventListener('click', toggleBoth);
-    }
+    // if (overlay) {
+    //   overlay.addEventListener('click', toggleBoth);
+    // }
   
-    if (leftNavToggle) {
-      leftNavToggle.addEventListener('click', toggleBoth);
-    }
-  }
+    // if (leftNavToggle) {
+    //   leftNavToggle.addEventListener('click', toggleBoth);
+    // }
+  // }
   
   function saveLeftScroll() {
     const leftSidebar = document.getElementById('dartdoc-sidebar-left');
@@ -438,64 +434,64 @@ function initSideNav() {
     initSideNav();
     initScrollSave();
   
-    const searchBox = document.getElementById('search-box');
-    const searchBody = document.getElementById('search-body');
-    const searchSidebar = document.getElementById('search-sidebar');
+    // const searchBox = document.getElementById('search-box');
+    // const searchBody = document.getElementById('search-body');
+    // const searchSidebar = document.getElementById('search-sidebar');
   
-    if (document.body.getAttribute('data-using-base-href') === 'false') {
-      // If dartdoc did not add a base-href tag, we will need to add the relative
-      // path ourselves.
-      baseHref = document.body.getAttribute('data-base-href');
-    }
+    // if (document.body.getAttribute('data-using-base-href') === 'false') {
+    //   // If dartdoc did not add a base-href tag, we will need to add the relative
+    //   // path ourselves.
+    //   baseHref = document.body.getAttribute('data-base-href');
+    // }
   
-    function disableSearch() {
-      console.log('Could not activate search functionality.');
-      if (searchBox) {
-        searchBox.placeholder = 'Failed to initialize search';
-      }
+    // function disableSearch() {
+    //   console.log('Could not activate search functionality.');
+    //   if (searchBox) {
+    //     searchBox.placeholder = 'Failed to initialize search';
+    //   }
   
-      if (searchBody) {
-        searchBody.placeholder = 'Failed to initialize search';
-      }
+    //   if (searchBody) {
+    //     searchBody.placeholder = 'Failed to initialize search';
+    //   }
   
-      if (searchSidebar) {
-        searchSidebar.placeholder = 'Failed to initialize search';
-      }
-    }
+    //   if (searchSidebar) {
+    //     searchSidebar.placeholder = 'Failed to initialize search';
+    //   }
+    // }
   
-    if ('fetch' in window) {
-      fetch(baseHref + 'index.json', {method: 'GET'})
-          .then(response => response.json())
-          .then(index => {
-            // Handle if the user specified a `search` parameter in the URL
-            if ('URLSearchParams' in window) {
-              const search = new URLSearchParams(window.location.search).get('search');
-              if (search) {
-                const matches = findMatches(search);
-                if (matches.length !== 0) {
-                  window.location = baseHref + matches[0].href;
-                  return;
-                }
-              }
-            }
+    // if ('fetch' in window) {
+    //   fetch(baseHref + 'index.json', {method: 'GET'})
+    //       .then(response => response.json())
+    //       .then(index => {
+    //         // Handle if the user specified a `search` parameter in the URL
+    //         if ('URLSearchParams' in window) {
+    //           const search = new URLSearchParams(window.location.search).get('search');
+    //           if (search) {
+    //             const matches = findMatches(search);
+    //             if (matches.length !== 0) {
+    //               window.location = baseHref + matches[0].href;
+    //               return;
+    //             }
+    //           }
+    //         }
   
-            // Initialize all three search fields
-            if (searchBox) {
-              initializeSearch(searchBox, index);
-            }
+    //         // Initialize all three search fields
+    //         if (searchBox) {
+    //           initializeSearch(searchBox, index);
+    //         }
   
-            if (searchBody) {
-              initializeSearch(searchBody, index);
-            }
+    //         if (searchBody) {
+    //           initializeSearch(searchBody, index);
+    //         }
   
-            if (searchSidebar) {
-              initializeSearch(searchSidebar, index);
-            }
-          })
-          .catch(() => {
-            disableSearch();
-          });
-    } else {
-      disableSearch();
-    }
+    //         if (searchSidebar) {
+    //           initializeSearch(searchSidebar, index);
+    //         }
+    //       })
+    //       .catch(() => {
+    //         disableSearch();
+    //       });
+    // } else {
+    //   disableSearch();
+    // }
   });

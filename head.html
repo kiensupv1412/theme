@@ -1,140 +1,131 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
-  <meta name="description" content="API docs for the SingleChildScrollView class from the widgets library, for the Dart programming language.">
-  <title>SingleChildScrollView class - widgets library - Dart API</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+    <meta name="description"
+        content="API docs for the SingleChildScrollView class from the widgets library, for the Dart programming language.">
+    <title>Tử Vi Bát Tự</title>
 
-  <!-- required because all the links are pseudo-absolute -->
-  
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  
-  <link rel="stylesheet" href=".//head/page.css">
-  <link rel="stylesheet" href=".//head/page1.css">
+    <link rel="stylesheet" href=".//head/page1.css">
+    <link href=".//head/page3.css" rel="stylesheet" type="text/css">
 
-  <!-- style overrides for dartdoc -->
-<style>
-@import 'https://fonts.googleapis.com/css?family=Roboto:500,400italic,300,400,100i';
-@import 'https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Sharp|Material+Icons+Round';
-</style>
-
-<link href=".//head/page3.css" rel="stylesheet" type="text/css">
-
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Sharp|Material+Icons+Round" rel="stylesheet">
-<style>
-  /* Rule for sizing the icon. */
-  .md-36 { font-size: 36px; }
-  img {
-
-transition: transform 250ms;
-}
-
-img:hover {
-transform: translateY(-5px);
-}
-
-ul {
-margin-top: auto;
-margin-bottom: auto;
-list-style-type: none;
-}
-
-ul li a:hover {
-background: #e8e9eb;
+    <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Sharp|Material+Icons+Round"
+        rel="stylesheet">
+    <style>
+        .md-36 {
+            font-size: 36px;
         }
 
-*,
-::after,
-::before {
-box-sizing: border-box;
-}
+        img {
 
+            transition: transform 250ms;
+        }
+        
+        img:hover {
+            transform: translateY(-5px);
+        }
 
-img {
-width: 2rem;
-}
-
-.icon-bar>.item-thumbnail {
-height: 2.8rem;
-padding-left: 5px;
-display: flex;
-/* justify-content: center; */
-align-items: center;
-border-radius: 8px;
-}
-.sidebar::-webkit-scrollbar-thumb {
-    background: none;
-}
-
-.sidebar:hover::-webkit-scrollbar-thumb {
-    background: #e8e9eb;
-    border-radius: 10px;
-}
-
-
-.sidebar::-webkit-scrollbar {
-width: 5px;
-}
-
-.main-content::-webkit-scrollbar {
-width: 8px;
-}
-.main-content:hover::-webkit-scrollbar-thumb {
-    background: #e8e9eb;
-    border-radius: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.main-head>ul {
+        ul {
+            margin-top: auto;
+            margin-bottom: auto;
             list-style-type: none;
-            padding-left: 0;
-            position: fixed;
         }
 
-        .main-head>ul li {
-            float: left;
+        :focus {
+  background: #e8e9eb;
+  outline: none;
+  margin: 1px;
+}
+
+.icon-bar:hover {
+            background: #e8e9eb;
+            border-radius: 7px;
+            margin: 1px;
+        }
+        
+
+        .sidebar > ol li a:hover {
+            background: #e8e9eb;
+            border-radius: 3px;
+            margin: 1px;
         }
 
-        .main-head>ul li a {
-            display: block;
-            color: white;
-            text-align: center;
-            text-decoration: none;
+        .sidebar > ol li a:hover {
+            background: #e8e9eb;
+            border-radius: 3px;
+            margin: 1px;
         }
 
-        .main-head>ul li a:hover {
-            background-color: #d1d1d1;
+        .desc > ul li a:hover {
+            background: #e8e9eb;
+            border-radius: 3px;
+            margin: 1px;
         }
 
-        .main-head>ul li a img {
+        .sidebar > ol li a:focus {
+            background: #e8e9eb;
+            border-radius: 3px;
+            margin: 1px;
+        }
+
+        .desc > ul li a:focus {
+            background: #e8e9eb;
+            border-radius: 3px;
+            margin: 1px;
+        }
+
+        .desc > ol li a:focus {
+            background: #e8e9eb;
+            border-radius: 3px;
+            margin: 1px;
+        }
+
+        .icon-bar>.item-thumbnail {
+            height: 2.8rem;
+            padding-left: 5px;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            border-radius: 8px;
+        }
+
+        .sidebar::-webkit-scrollbar-thumb {
+            background: none;
+        }
+
+        .sidebar:hover::-webkit-scrollbar-thumb {
+            background: #e8e9eb;
+            border-radius: 10px;
+        }
+
+
+
+        .sidebar::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        .main-content::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .main-content:hover::-webkit-scrollbar-thumb {
+            background: #e8e9eb;
+            border-radius: 10px;
+        }
+
+        /* //////////////////////////////////////////////// */
+
+
+
+        header > ul li a:hover {
+            background-color: #e8e9eb;
+        }
+
+        .sidebar-offcanvas-left > ul li a img {
             width: 2rem;
         }
 
@@ -146,429 +137,389 @@ width: 8px;
             align-items: center;
             border-radius: 8px;
         }
-
-        .main-head {
-            display: flex;
-            justify-content: center;
+        header > ul li a img {
+            width: 2rem;
         }
 
-
-        .main {
-            display: flex;
-        }
-
-</style>
-
-<script async="" defer="" src=".//head/page.js"></script>
-
-<!-- Styles and scripting for handling custom code snippets -->
-<link href=".//head/page4.css" rel="stylesheet" type="text/css">
-<script src=".//head/page1.js"></script>
-
-<link rel="search" type="application/opensearchdescription+xml" title="Flutter API" href="/opensearch.xml"/>
-
+    </style>
 </head>
 
 
-<body data-base-href="..//"
-      data-using-base-href="true">
-
-<div id="overlay-under-drawer"></div>
-
-<header id="title">
-    <ul class="breadcrumbs gt-separated dark hidden-xs">
-        <li class="icon-head">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/lich-am-duong">
-                <img alt="" src="./image/lich-am-duong.png"></a>
+<body>
+    <header id="title">
+        <ul class="breadcrumbs gt-separated dark">
+            <li class="icon-head">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/lich-am-duong">
+                    <img alt="" src="./image/lich-am-duong.png"></a>
 
 
-        </li>
-        <li class="icon-head">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-vi">
-                <img alt="" src="./image/la-so-tu-vi.png"></a>
+            </li>
+            <li class="icon-head">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-vi">
+                    <img alt="" src="./image/la-so-tu-vi.png"></a>
 
 
-        </li>
-        <li class="icon-head">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-tru">
-                <img alt="" src="./image/la-so-tu-tru.png"></a>
+            </li>
+            <li class="icon-head">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-tru">
+                    <img alt="" src="./image/la-so-tu-tru.png"></a>
 
 
-        </li>
-        <li class="icon-head">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/xem-tinh-duyen">
-                <img alt="" src="./image/boi-tinh-duyen.png"></a>
+            </li>
+            <li class="icon-head">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/xem-tinh-duyen">
+                    <img alt="" src="./image/boi-tinh-duyen.png"></a>
 
 
-        </li>
-        <li class="icon-head">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/quy-coc-doan-menh">
-                <img alt="" src="./image/quy-coc-doan-menh.png"></a>
+            </li>
+            <li class="icon-head">
+                <a class="item-thumbnail" href="https://tuvibattu.vn/quy-coc-doan-menh">
+                    <img alt="" src="./image/quy-coc-doan-menh.png"></a>
 
-        </li>
-    </ul>
-  <!-- <form class="search navbar-right" role="search">
-    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
-  </form> -->
-</header>
-<main>
+            </li>
+        </ul>
+
+    </header>
+    <main>
 
 
-  <div id="dartdoc-main-content" class="main-content">
-      <div>
+        <div id="dartdoc-main-content" class="main-content">
+            <div>
+
+                <!-- button click     
   <div id="external-links" class="btn-group"><a title="View source code" class="source-link" href="https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/widgets/single_child_scroll_view.dart#L215"><i class="material-icons">description</i></a></div>
-<h1><span class="kind-class">SingleChildScrollView</span> class 
-    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
- 
-</h1></div>
-
-    
-<section class="desc markdown">
-  <p>A box in which a single widget can be scrolled.</p>
-<p>This widget is useful when you have a single box that will normally be
-entirely visible, for example a clock face in a time picker, but you need to
-make sure it can be scrolled if the container gets too small in one axis
-(the scroll direction).</p>
-<p>It is also useful if you need to shrink-wrap in both axes (the main
-scrolling direction as well as the cross axis), as one might see in a dialog
-or pop-up menu. In that case, you might pair the 
-      
-A box in which a single widget can be scrolled.</p>
-<p>This widget is useful when you have a single box that will normally be
-entirely visible, for example a clock face in a time picker, but you need to
-make sure it can be scrolled if the container gets too small in one axis
-(the scroll direction).</p>
-<p>It is also useful if you need to shrink-wrap in both axes (the main
-scrolling direction as well as the cross axis), as one might see in a dialog
-or pop-up menu. In that case, you might pair the 
-           
-</p>
-<p>A box in which a single widget can be scrolled.</p>
-<p>This widget is useful when you have a single box that will normally be
-entirely visible, for example a clock face in a time picker, but you need to
-make sure it can be scrolled if the container gets too small in one axis
-(the scroll direction).</p>
-<p>It is also useful if you need to shrink-wrap in both axes (the main
-scrolling direction as well as the cross axis), as one might see in a dialog
-or pop-up menu. In that case, you might pair the 
-      
-A box in which a single widget can be scrolled.</p>
-<p>This widget is useful when you have a single box that will normally be
-entirely visible, for example a clock face in a time picker, but you need to
-make sure it can be scrolled if the container gets too small in one axis
-(the scroll direction).</p>
-<p>It is also useful if you need to shrink-wrap in both axes (the main
-scrolling direction as well as the cross axis), as one might see in a dialog
-or pop-up menu. In that case, you might pair the 
-           
-</p>
-<p>See also:</p>
-<ul>
-<li><a href="widgets/ListView-class.html">ListView</a>, which handles multiple children in a scrolling list.</li>
-<li><a href="widgets/GridView-class.html">GridView</a>, which handles multiple children in a scrolling grid.</li>
-<li><a href="widgets/PageView-class.html">PageView</a>, for a scrollable that works page by page.</li>
-<li><a href="widgets/Scrollable-class.html">Scrollable</a>, which handles arbitrary scrolling effects.</li>
-</ul>
-</section>
-
-
-
- 
-
-
-
-  </div> <!-- /.main-content -->
-
-  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
-    <header id="header-search-sidebar" class="hidden-l">
-  <form class="search-sidebar" role="search">
-    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
-  </form>
-</header>
-
-<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
-  <li><a href="index.html">Flutter</a></li>
-  <li><a href="widgets/widgets-library.html">widgets</a></li>
-  <li class="self-crumb">SingleChildScrollView class</li>
-</ol>
-
-
-    <h5>widgets library</h5>
-    <ul>
-
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/lich-am-duong">
-                <img alt="" src=".//image/lich-am-duong.png"></a>
-
-
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-vi">
-                <img alt="" src=".//image/la-so-tu-vi.png"></a>
-
-
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-tru">
-                <img alt="" src=".//image/la-so-tu-tru.png"></a>
-
+-->
+
+
+                <h1><span class="kind-class">SingleChildScrollView</span>
+
+                    <!-- button click
+        <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a> 
+    -->
+
+                </h1>
+            </div>
+            <section class="desc markdown">
+                <p>
+                Tăng Quốc Phiên từng nói: “Lông mày thể hiện sự thành đạt thời trẻ tuổi, râu thể hiện vận mệnh lúc về già” hay “Thiếu niên nhìn cặp lông mày”.
+                Theo ông, việc quan sát lông mày có thể giúp nhận biết người nào đó có thành đạt hay không, vận mệnh tương lai của họ thế nào. Vậy liệu chúng ta có thể xét đoán một người qua hàng lông mày? Và nhà lãnh đạo có thể tiếp thu những điều vừa nêu như thế nào khi đánh giá con người?
+                </p>
+                <span>link:</span>
+
+                <ul>
+                    <li><a href="https://tuvibattu.vn/lich-am-duong">xem tử vi</a>, “Văn minh khí tượng”
+                        scrolling list.</li>
+                    <li><a href="https://tuvibattu.vn/lich-am-duong">lịch âm</a>, “Văn minh khí tượng”
+                        scrolling grid.</li>
+                    <li><a href="https://tuvibattu.vn/lich-am-duong">tử vi bát tự</a>, “Văn minh khí tượng”.
+                    </li>
+               
+                </ul>
+                Người xưa bàn về lông mày như thế nào?
+                Lông mày của mỗi người có thể dài hoặc ngắn, thô hoặc mảnh, cứng hoặc mềm, rậm hoặc thưa, đó là đặc điểm bẩn sinh. Trước hết, lông mày có ý nghĩa quan trọng về mặt thẩm mỹ. Lông mày đẹp giúp khuôn mặt trở nên sáng sủa, dễ nhìn. dễ tạo ấn tượng với người khác. Nhưng lông mày cũng tiết lộ thông tin về con người.
+                <br>
+                Người xưa cho rằng lông mày chịu sự tác động của quá trình tu dưỡng, cho nên nó có thể sáng hoặc tối, thẳng hoặc xoăn, bóng hoặc mờ; và việc chăm sóc lông mày cũng giống như tu tâm dưỡng tính, nên tâm tính bất chính thì lông mày rối, tâm tính không trong sạch thì lông mày mờ, tâm tính thiếu ngay thẳng thì lông mày tối.
+                Người xưa quan niệm nhìn lông mày có thể biết tư chất bẩm sinh, tình trạng sức khỏe, tính cách, sự thành đạt, tuổi thọ của một người, thậm chí biết được họ giàu hay nghèo, sang hay hèn.
+                <br>
+                Trong “Băng Giám”, Tăng Quốc Phiên nói rằng: “Lông mày quý ở chỗ sáng, sáng ở đây là chỉ sự bóng sáng của phần đuôi lông mày. Người giàu sang thì đầu mày, thân mày và đuôi mày  đều bóng sáng, tất nhiên ở một số người, lông mày chỉ bóng sáng ở một hoặc hai trong ba phần vừa nêu.
+                “Văn minh khí tượng” là cách nói chỉ lông mày thanh tú sáng sủa, không quá thưa cũng không quá dày, không thô cứng, không tạo cảm giác nặng nề. Nhìn từ xa giống như hai con chim phượng đang cười gió múa lượn, đây là tướng lông mày tốt. Nếu giống như vũng mực loang ra, thì đây là tướng lông mày xấu.
+                <br>
+                Cặp lông mày dựng lên như hình chữ bát ngược là tướng lông mày tốt. Lông mày giống hình chữ bát là tướng lông mày xấu. Lông mày nếu tương đối dài thì phải có lên có xuống, nếu tương đối ngắn thì phải rõ nét, có thần, nếu đậm thì phải thanh thoát, nếu nhạt thì phải mướt đẹp, nếu giống như hai thanh bảo kiếm sắc bén, ắt trở thành tướng soái thống lĩnh tam quân,nếu giống như hai cây chổi cũ nát, thì sẽ mang họa sát thân.
+                
+                Lông mày quá dài và gần hai mắt, sẽ khiến ánh mắt trông có vẻ đời đẫn, không sắc sảo, lông mày mọc rời rạc, lộn xộn, sẽ khiến ánh mắt trông có vẻ mệt mỏi, vô hồn, lông mày quá thưa và dài, lông mày quá thô và rậm sẽ mất đi vẻ thanh tú, đây đều là tướng lông mày xấu”.
+                <br>
+                Người xưa cũng nói: “Lông mày đẹp là chiếc lọng che cho mắt, thể hiện dáng vẻ của cả khuôn mặt, còn gọi là tinh hoa của mắt, là căn cứ phân biệt người tài đức và ngu muội”.
+                Theo đó, lông mày với các đặc điểm khác nhau sẽ báo hiệu sự thông minh hay ngốc nghếch, giàu sang hay nghèo khó, rắn rỏi hay nhút nhát..., thậm chí còn báo hiệu sự gian trá, xảo quyệt. Việc phán đoán tài năng, tính cách, số phận con người theo cách này ít nhiều có mang màu sắc mê tín.</p>
+                <div class="wraper-post">
+                    <div class="main-post" onclick="window.location='https://tuvibattu.vn/tin-tuc';"style="cursor: pointer;">
+                        <div class="new-post">
+                            <div class="title-post"><a href="https://tuvibattu.vn/tin-tuc">
+                                    <h3>Lập trình hướng đối tượng oop</h3>
+                                </a>
+                                <p>Hôm nay mình sẽ chia sẻ 1 chủ đề vô cùng quen thuộc với hầu hết các lập trình
+                                    viên - Lập trình hướng đối tượng(định nghĩa, 4 tính chất oop, ví dụ demo).</p>
+                            </div>
+                            <div class="thumb-post"><a href="https://tuvibattu.vn/tin-tuc"><img
+                                        src="image/tuvi-2022.jpg" alt="Lập trình hướng đối tượng oop"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div> <!-- /.main-content -->
+
+        <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+            
+            <h5>widgets library</h5>
+            <ul>
+
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/lich-am-duong">
+                        <img alt="" src=".//image/lich-am-duong.png"></a>
+
+
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-vi">
+                        <img alt="" src=".//image/la-so-tu-vi.png"></a>
+
+
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-tru">
+                        <img alt="" src=".//image/la-so-tu-tru.png"></a>
+
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/xem-tinh-duyen">
-                <img alt="" src=".//image/boi-tinh-duyen.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/xem-tinh-duyen">
+                        <img alt="" src=".//image/boi-tinh-duyen.png"></a>
 
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/quy-coc-doan-menh">
-                <img alt="" src=".//image/quy-coc-doan-menh.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/quy-coc-doan-menh">
+                        <img alt="" src=".//image/quy-coc-doan-menh.png"></a>
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/can-xuong-tinh-so">
-                <img alt="" src=".//image/can-xuong-tinh-so.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/can-xuong-tinh-so">
+                        <img alt="" src=".//image/can-xuong-tinh-so.png"></a>
 
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/lich-am-duong">
-                <img alt="" src=".//image/lich-am-duong.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/lich-am-duong">
+                        <img alt="" src=".//image/lich-am-duong.png"></a>
 
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-vi">
-                <img alt="" src=".//image/la-so-tu-vi.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-vi">
+                        <img alt="" src=".//image/la-so-tu-vi.png"></a>
 
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-tru">
-                <img alt="" src=".//image/la-so-tu-tru.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-tru">
+                        <img alt="" src=".//image/la-so-tu-tru.png"></a>
 
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/xem-tinh-duyen">
-                <img alt="" src=".//image/boi-tinh-duyen.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/xem-tinh-duyen">
+                        <img alt="" src=".//image/boi-tinh-duyen.png"></a>
 
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/quy-coc-doan-menh">
-                <img alt="" src=".//image/quy-coc-doan-menh.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/quy-coc-doan-menh">
+                        <img alt="" src=".//image/quy-coc-doan-menh.png"></a>
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/can-xuong-tinh-so">
-                <img alt="" src=".//image/can-xuong-tinh-so.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/can-xuong-tinh-so">
+                        <img alt="" src=".//image/can-xuong-tinh-so.png"></a>
 
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/lich-am-duong">
-                <img alt="" src=".//image/lich-am-duong.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/lich-am-duong">
+                        <img alt="" src=".//image/lich-am-duong.png"></a>
 
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-vi">
-                <img alt="" src=".//image/la-so-tu-vi.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-vi">
+                        <img alt="" src=".//image/la-so-tu-vi.png"></a>
 
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-tru">
-                <img alt="" src=".//image/la-so-tu-tru.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-tru">
+                        <img alt="" src=".//image/la-so-tu-tru.png"></a>
 
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/xem-tinh-duyen">
-                <img alt="" src=".//image/boi-tinh-duyen.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/xem-tinh-duyen">
+                        <img alt="" src=".//image/boi-tinh-duyen.png"></a>
 
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/quy-coc-doan-menh">
-                <img alt="" src=".//image/quy-coc-doan-menh.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/quy-coc-doan-menh">
+                        <img alt="" src=".//image/quy-coc-doan-menh.png"></a>
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/can-xuong-tinh-so">
-                <img alt="" src=".//image/can-xuong-tinh-so.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/can-xuong-tinh-so">
+                        <img alt="" src=".//image/can-xuong-tinh-so.png"></a>
 
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/lich-am-duong">
-                <img alt="" src=".//image/lich-am-duong.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/lich-am-duong">
+                        <img alt="" src=".//image/lich-am-duong.png"></a>
 
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-vi">
-                <img alt="" src=".//image/la-so-tu-vi.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-vi">
+                        <img alt="" src=".//image/la-so-tu-vi.png"></a>
 
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-tru">
-                <img alt="" src=".//image/la-so-tu-tru.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-tru">
+                        <img alt="" src=".//image/la-so-tu-tru.png"></a>
 
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/xem-tinh-duyen">
-                <img alt="" src=".//image/boi-tinh-duyen.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/xem-tinh-duyen">
+                        <img alt="" src=".//image/boi-tinh-duyen.png"></a>
 
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/quy-coc-doan-menh">
-                <img alt="" src=".//image/quy-coc-doan-menh.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/quy-coc-doan-menh">
+                        <img alt="" src=".//image/quy-coc-doan-menh.png"></a>
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/can-xuong-tinh-so">
-                <img alt="" src=".//image/can-xuong-tinh-so.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/can-xuong-tinh-so">
+                        <img alt="" src=".//image/can-xuong-tinh-so.png"></a>
 
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/lich-am-duong">
-                <img alt="" src=".//image/lich-am-duong.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/lich-am-duong">
+                        <img alt="" src=".//image/lich-am-duong.png"></a>
 
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-vi">
-                <img alt="" src=".//image/la-so-tu-vi.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-vi">
+                        <img alt="" src=".//image/la-so-tu-vi.png"></a>
 
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-tru">
-                <img alt="" src=".//image/la-so-tu-tru.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-tru">
+                        <img alt="" src=".//image/la-so-tu-tru.png"></a>
 
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/xem-tinh-duyen">
-                <img alt="" src=".//image/boi-tinh-duyen.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/xem-tinh-duyen">
+                        <img alt="" src=".//image/boi-tinh-duyen.png"></a>
 
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/quy-coc-doan-menh">
-                <img alt="" src=".//image/quy-coc-doan-menh.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/quy-coc-doan-menh">
+                        <img alt="" src=".//image/quy-coc-doan-menh.png"></a>
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/can-xuong-tinh-so">
-                <img alt="" src=".//image/can-xuong-tinh-so.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/can-xuong-tinh-so">
+                        <img alt="" src=".//image/can-xuong-tinh-so.png"></a>
 
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/lich-am-duong">
-                <img alt="" src=".//image/lich-am-duong.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/lich-am-duong">
+                        <img alt="" src=".//image/lich-am-duong.png"></a>
 
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-vi">
-                <img alt="" src=".//image/la-so-tu-vi.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-vi">
+                        <img alt="" src=".//image/la-so-tu-vi.png"></a>
 
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-tru">
-                <img alt="" src=".//image/la-so-tu-tru.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/la-so-tu-tru">
+                        <img alt="" src=".//image/la-so-tu-tru.png"></a>
 
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/xem-tinh-duyen">
-                <img alt="" src=".//image/boi-tinh-duyen.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/xem-tinh-duyen">
+                        <img alt="" src=".//image/boi-tinh-duyen.png"></a>
 
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/quy-coc-doan-menh">
-                <img alt="" src=".//image/quy-coc-doan-menh.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/quy-coc-doan-menh">
+                        <img alt="" src=".//image/quy-coc-doan-menh.png"></a>
 
-        </li>
-        <li class="icon-bar">
-            <a class="item-thumbnail" href="https://tuvibattu.vn/can-xuong-tinh-so">
-                <img alt="" src=".//image/can-xuong-tinh-so.png"></a>
+                </li>
+                <li class="icon-bar">
+                    <a class="item-thumbnail" href="https://tuvibattu.vn/can-xuong-tinh-so">
+                        <img alt="" src=".//image/can-xuong-tinh-so.png"></a>
 
 
-        </li>
+                </li>
 
-    </ul>
+            </ul>
 
-  </div>
+        </div>
+        <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+            <ol>
 
-  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
-    <ol>
+                <li class="section-title"><a
+                        href="widgets/SingleChildScrollView-class.html#constructors">Constructors</a></li>
+                <li><a href="widgets/SingleChildScrollView/SingleChildScrollView.html">SingleChildScrollView</a></li>
 
-    <li class="section-title"><a href="widgets/SingleChildScrollView-class.html#constructors">Constructors</a></li>
-    <li><a href="widgets/SingleChildScrollView/SingleChildScrollView.html">SingleChildScrollView</a></li>
 
+                <li class="section-title">
+                    <a href="widgets/SingleChildScrollView-class.html#instance-properties">Properties</a>
+                </li>
+                <li><a href="widgets/SingleChildScrollView/child.html">child</a></li>
+                <li><a href="widgets/SingleChildScrollView/clipBehavior.html">clipBehavior</a></li>
+                <li><a href="widgets/SingleChildScrollView/controller.html">controller</a></li>
+                <li><a href="widgets/SingleChildScrollView/dragStartBehavior.html">dragStartBehavior</a></li>
+                <li><a href="widgets/Widget/hashCode.html">hashCode</a></li>
+                <li><a href="widgets/Widget/key.html">key</a></li>
+                <li><a href="widgets/SingleChildScrollView/keyboardDismissBehavior.html">keyboardDismissBehavior</a>
+                </li>
+                <li><a href="widgets/SingleChildScrollView/padding.html">padding</a></li>
+                <li><a href="widgets/SingleChildScrollView/physics.html">physics</a></li>
+                <li><a href="widgets/SingleChildScrollView/primary.html">primary</a></li>
+                <li><a href="widgets/SingleChildScrollView/restorationId.html">restorationId</a></li>
+                <li><a href="widgets/SingleChildScrollView/reverse.html">reverse</a></li>
+                <li><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+                <li><a href="widgets/SingleChildScrollView/scrollDirection.html">scrollDirection</a></li>
+                <li class="section-title"><a
+                        href="widgets/SingleChildScrollView-class.html#instance-methods">Methods</a></li>
+                <li><a href="widgets/SingleChildScrollView/build.html">build</a></li>
+                <li><a href="widgets/StatelessWidget/createElement.html">createElement</a></li>
+                <li><a href="foundation/DiagnosticableTree/debugDescribeChildren.html">debugDescribeChildren</a></li>
+                <li><a href="widgets/Widget/debugFillProperties.html">debugFillProperties</a></li>
+                <li><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+                <li><a href="foundation/DiagnosticableTree/toDiagnosticsNode.html">toDiagnosticsNode</a></li>
+                <li><a href="foundation/Diagnosticable/toString.html">toString</a></li>
+                <li><a href="foundation/DiagnosticableTree/toStringDeep.html">toStringDeep</a></li>
+                <li><a href="foundation/DiagnosticableTree/toStringShallow.html">toStringShallow</a></li>
+                <li><a href="widgets/Widget/toStringShort.html">toStringShort</a></li>
+                <li class="section-title inherited"><a
+                        href="widgets/SingleChildScrollView-class.html#operators">Operators</a></li>
+                <li><a href="widgets/Widget/operator_equals.html">operator ==</a></li>
+        </div>
+        <!--/.sidebar-offcanvas-->
 
-    <li class="section-title">
-      <a href="widgets/SingleChildScrollView-class.html#instance-properties">Properties</a>
-    </li>
-    <li><a href="widgets/SingleChildScrollView/child.html">child</a></li>
-    <li><a href="widgets/SingleChildScrollView/clipBehavior.html">clipBehavior</a></li>
-    <li><a href="widgets/SingleChildScrollView/controller.html">controller</a></li>
-    <li><a href="widgets/SingleChildScrollView/dragStartBehavior.html">dragStartBehavior</a></li>
-    <li class="inherited"><a href="widgets/Widget/hashCode.html">hashCode</a></li>
-    <li class="inherited"><a href="widgets/Widget/key.html">key</a></li>
-    <li><a href="widgets/SingleChildScrollView/keyboardDismissBehavior.html">keyboardDismissBehavior</a></li>
-    <li><a href="widgets/SingleChildScrollView/padding.html">padding</a></li>
-    <li><a href="widgets/SingleChildScrollView/physics.html">physics</a></li>
-    <li><a href="widgets/SingleChildScrollView/primary.html">primary</a></li>
-    <li><a href="widgets/SingleChildScrollView/restorationId.html">restorationId</a></li>
-    <li><a href="widgets/SingleChildScrollView/reverse.html">reverse</a></li>
-    <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
-    <li><a href="widgets/SingleChildScrollView/scrollDirection.html">scrollDirection</a></li>
+    </main>
 
-    <li class="section-title"><a href="widgets/SingleChildScrollView-class.html#instance-methods">Methods</a></li>
-    <li><a href="widgets/SingleChildScrollView/build.html">build</a></li>
-    <li class="inherited"><a href="widgets/StatelessWidget/createElement.html">createElement</a></li>
-    <li class="inherited"><a href="foundation/DiagnosticableTree/debugDescribeChildren.html">debugDescribeChildren</a></li>
-    <li class="inherited"><a href="widgets/Widget/debugFillProperties.html">debugFillProperties</a></li>
-    <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
-    <li class="inherited"><a href="foundation/DiagnosticableTree/toDiagnosticsNode.html">toDiagnosticsNode</a></li>
-    <li class="inherited"><a href="foundation/Diagnosticable/toString.html">toString</a></li>
-    <li class="inherited"><a href="foundation/DiagnosticableTree/toStringDeep.html">toStringDeep</a></li>
-    <li class="inherited"><a href="foundation/DiagnosticableTree/toStringShallow.html">toStringShallow</a></li>
-    <li class="inherited"><a href="widgets/Widget/toStringShort.html">toStringShort</a></li>
 
-    <li class="section-title inherited"><a href="widgets/SingleChildScrollView-class.html#operators">Operators</a></li>
-    <li class="inherited"><a href="widgets/Widget/operator_equals.html">operator ==</a></li>
-
-
-
-
-</ol>
-
-  </div><!--/.sidebar-offcanvas-->
-
-</main>
-
-
-
-
-<script src=".//head/page2.js"></script>
-<script src=".//head/page3.js"></script>
+    <script src=".//head/page3.js"></script>
 
 
 
 </body>
 
 </html>
-
