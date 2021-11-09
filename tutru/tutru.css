@@ -389,8 +389,12 @@ tbody {
     border-top: 1.5px solid rgb(247 140 37 / 26%);
 }
 
+.label-info {
+    background-color: #faebdd
+}
+
 .label-default {
-    background-color: #fbd4b0;
+    background-color: #777;
 }
 
 

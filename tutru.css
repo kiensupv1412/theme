@@ -377,10 +377,13 @@ a {
     /* border-top: 1px solid rgb(243 180 120) */
 }
 
-.label-default {
+.label-info {
     background-color: #faebdd
 }
 
+.label-default {
+    background-color: #777;
+}
 
 .label {
     display: inline;
