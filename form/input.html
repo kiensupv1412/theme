@@ -184,7 +184,7 @@
         .box__tkt {
             background-size: cover;
             box-shadow: 0 3px 8px #b1b1b1;
-            border-radius: 7px;
+            border-radius: 20px;
             padding: 20px 30px;
         }
 
@@ -514,6 +514,26 @@
             border: 0;
             border-radius: 5px;
         }
+
+
+        input[type="date"] {
+            font-size: 15px; 
+            font-weight: 700;
+            border-radius: 8px;
+            border-style: none ;
+            height: 30px;
+    width: 150px;
+    padding-left: 10px;
+}
+
+input:focus {
+    outline: none
+}
+
+
+
+
+
     </style>
 
 
@@ -522,31 +542,32 @@
             <div class="tbl__tkt box__bg_color">
                 <div class="box__tkt">
                     <p class="title_ttv fz29">
-                        Xem lá số tử vi 2021 miễn phí
+                        Lá số tử vi & bình giải
                     </p>
-                    <p class="text_small_italic mgb7">Nhập đúng năm sinh âm lịch</p>
+                    <p class="text_small_italic mgb7">Nhập thông tin Dương lịch</p>
                     <div class="form__ttv frm__ttv text-left">
                         <form method="post" action="https://phongthuyso.vn/xem-la-so-tu-vi.html">
                             <div class="line__tv">
-                                <span class="year_ttv line__height25">Họ và tên:</span>
-                                <div class="input__form"><input type="text" class="txtInput" name="ho_ten" value="d"
+                                <span class="year_ttv line__height25">Họ và tên</span>
+                                <div class="input__form"><input type="text" class="txtInput" name="ho_ten" value=""
                                         required=""></div>
                             </div>
                             <div class="line__tv">
-                                <span class="year_ttv">Giới tính:</span>
+                                <span class="year_ttv">Giới tính</span>
                                 <label for="nam" class="lbl__sex"><input type="radio" id="nam" name="gioi_tinh"
                                         value="1" checked=""><span></span> Nam</label>
                                 <label for="nu" class="lbl__sex"><input type="radio" id="nu" name="gioi_tinh"
                                         value="0"><span></span> Nữ</label>
                             </div>
                             <div class="line__tv">
-                                <input type="date" value="2018-07-22" min="1900-01-01"
-                                    max="2018-12-31">
+                                <span class="year_ttv">Ngày sinh</span>
+                                <input type="date" value="2022-01-01" min="1900-01-01"
+                                    max="2040-01-01">
                            </div>
-                            <div class="line__tv">
+                            <center class="line__tv">
                                 <select class="select_list" name="gio_sinh" required="">
-                                    <option value="">Giờ sinh</option>
-                                    <option value="1" selected="">1</option>
+                                    <option value="">Giờ</option>
+                                    <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
                                     <option value="4">4</option>
@@ -571,10 +592,10 @@
                                     <option value="23">23</option>
                                 </select>
                                 <select class="select_list" name="phut_sinh" required="">
-                                    <option value="">Phút sinh</option>
+                                    <option value="">Phút</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
-                                    <option value="3" selected="">3</option>
+                                    <option value="3">3</option>
                                     <option value="4">4</option>
                                     <option value="5">5</option>
                                     <option value="6">6</option>
@@ -632,7 +653,7 @@
                                     <option value="58">58</option>
                                     <option value="59">59</option>
                                 </select>
-                            </div>
+                            </center>
                             <div class="box_button">
                                 <input type="submit" class="button__xemngay" value="Xem ngay">
                             </div>
@@ -642,7 +663,6 @@
             </div>
         </div>
     </div>
-    <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </body>
 
 </html>

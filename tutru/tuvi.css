@@ -526,3 +526,21 @@ p {
     display: inline-block;
 
 }
+
+
+
+
+  @media only screen and (min-width: 992px) {
+    .scaleable-container {
+      width: 900px;
+      position: absolute;
+      transform: scale(1) translateX(-50%) !important;
+      transform-origin: 0% 0px;
+      top: 0px;
+      left: 50%;
+    }
+    .scaleable-wrapper {
+        width: 902px;
+        height: 1200px;
+      }
+  }

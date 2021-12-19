@@ -2925,141 +2925,141 @@
             </ul>
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <script type='text/javascript' src='https://tuvibattu.vn/theme_profile/js/hoverIntent.min.js?ver=1.8.1'></script>
+</body>
 
-    <script type='text/javascript' id='flatsome-js-js-extra'>
-        /* <![CDATA[ */
-        var flatsomeVars = {
-            "ajaxurl": "#",
-            "rtl": "",
-            "sticky_height": "70",
-            "lightbox": {
-                "close_markup": "<button title=\"%title%\" type=\"button\" class=\"mfp-close\"><svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"feather feather-x\"><line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"><\/line><line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"><\/line><\/svg><\/button>",
-                "close_btn_inside": false
-            },
-            "user": { "can_edit_pages": false },
-            "i18n": { "mainMenu": "Main Menu" },
-            "options": { "cookie_notice_version": "1" }
-        };
-    /* ]]> */
-    </script>
+<script type='text/javascript' src='https://tuvibattu.vn/theme_profile/js/hoverIntent.min.js?ver=1.8.1'></script>
 
-    <script type='text/javascript'
-        src='https://tuvibattu.vn/theme_profile/themes/flatsome/assets/js/flatsome.js?ver=3.13.3'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var flatsomeVars = {
+        "ajaxurl": "#",
+        "rtl": "",
+        "sticky_height": "70",
+        "lightbox": {
+            "close_markup": "<button title=\"%title%\" type=\"button\" class=\"mfp-close\"><svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"feather feather-x\"><line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"><\/line><line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"><\/line><\/svg><\/button>",
+            "close_btn_inside": false
+        },
+        "user": { "can_edit_pages": false },
+        "i18n": { "mainMenu": "Main Menu" },
+        "options": { "cookie_notice_version": "1" }
+    };
+/* ]]> */
+</script>
 
-    <script type='text/javascript'
-        src='https://tuvibattu.vn/theme_profile/themes/flatsome/inc/extensions/flatsome-lazy-load/flatsome-lazy-load.js?ver=3.13.3'></script>
-    <script>
-        function goToByScroll() {
-            $('html,body').animate({
-                scrollTop: $(".form-tu-van").offset().top - 100
-            }, 'slow');
+<script type='text/javascript'
+    src='https://tuvibattu.vn/theme_profile/themes/flatsome/assets/js/flatsome.js?ver=3.13.3'></script>
+
+<script type='text/javascript'
+    src='https://tuvibattu.vn/theme_profile/themes/flatsome/inc/extensions/flatsome-lazy-load/flatsome-lazy-load.js?ver=3.13.3'></script>
+
+<script>
+    function goToByScroll() {
+        $('html,body').animate({
+            scrollTop: $(".form-tu-van").offset().top - 100
+        }, 'slow');
+    }
+
+    $("#dangkytuvan").on("click", function (t) {
+        t.preventDefault();
+        var name = $('.name').val();
+
+        if (name.trim() == "") {
+            alert("Nhập họ và tên!");
+            return false;
         }
 
-        $("#dangkytuvan").on("click", function (t) {
-            t.preventDefault();
-            var name = $('.name').val();
+        var phone = $('.phone').val();
 
-            if (name.trim() == "") {
-                alert("Nhập họ và tên!");
-                return false;
-            }
+        if (phone.trim() == "") {
+            alert("Nhập số điện thoại!");
+            return false;
+        }
 
-            var phone = $('.phone').val();
+        var email = $('.email').val();
 
-            if (phone.trim() == "") {
-                alert("Nhập số điện thoại!");
-                return false;
-            }
+        if (email.trim() == "") {
+            alert("Nhập địa chỉ email!");
+            return false;
+        }
 
-            var email = $('.email').val();
-
-            if (email.trim() == "") {
-                alert("Nhập địa chỉ email!");
-                return false;
-            }
-
-            var note = $('.note').val();
+        var note = $('.note').val();
 
 
-            $.ajax({
-                headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') },
-                url: "/dang-ky-tu-van",
-                data: {
-                    name: name,
-                    phone: phone,
-                    email: email,
-                    note: note
-                },
-                type: "post",
-                timeout: 15e3,
-                beforeSend: function () {
+        $.ajax({
+            headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') },
+            url: "/dang-ky-tu-van",
+            data: {
+                name: name,
+                phone: phone,
+                email: email,
+                note: note
+            },
+            type: "post",
+            timeout: 15e3,
+            beforeSend: function () {
 
-                },
-                success: function (n) {
-                    if (n.status == 'error') {
-                        alert(n.message);
-                    }
+            },
+            success: function (n) {
+                if (n.status == 'error') {
+                    alert(n.message);
+                }
 
-                    if (n.status == 'success') {
-                        alert(n.message);
-                        $('.format').val("");
-                    }
+                if (n.status == 'success') {
+                    alert(n.message);
+                    $('.format').val("");
+                }
 
-                },
-                error: function (n) {
+            },
+            error: function (n) {
 
-                },
-            }).always(function () {
-            })
-        });
-    </script>
-    <script type='text/javascript' id='docy-main-js-after'>
-        jQuery(document).ready(function () {
+            },
+        }).always(function () {
+        })
+    });
+</script>
+<script type='text/javascript' id='docy-main-js-after'>
+    jQuery(document).ready(function () {
 
-        });
-        jQuery(document).ready(function () {
+    });
+    jQuery(document).ready(function () {
 
+        if (jQuery("#mySelect").val() == "windows") {
+            jQuery(".windows").show();
+        } else {
+            jQuery(".windows").hide();
+        }
+        jQuery("#mySelect").change(function () {
             if (jQuery("#mySelect").val() == "windows") {
                 jQuery(".windows").show();
             } else {
                 jQuery(".windows").hide();
             }
-            jQuery("#mySelect").change(function () {
-                if (jQuery("#mySelect").val() == "windows") {
-                    jQuery(".windows").show();
-                } else {
-                    jQuery(".windows").hide();
-                }
-            })
+        })
+        if (jQuery("#mySelect").val() == "ios") {
+            jQuery(".ios").show();
+        } else {
+            jQuery(".ios").hide();
+        }
+        jQuery("#mySelect").change(function () {
             if (jQuery("#mySelect").val() == "ios") {
                 jQuery(".ios").show();
             } else {
                 jQuery(".ios").hide();
             }
-            jQuery("#mySelect").change(function () {
-                if (jQuery("#mySelect").val() == "ios") {
-                    jQuery(".ios").show();
-                } else {
-                    jQuery(".ios").hide();
-                }
-            })
+        })
+        if (jQuery("#mySelect").val() == "linux") {
+            jQuery(".linux").show();
+        } else {
+            jQuery(".linux").hide();
+        }
+        jQuery("#mySelect").change(function () {
             if (jQuery("#mySelect").val() == "linux") {
                 jQuery(".linux").show();
             } else {
                 jQuery(".linux").hide();
             }
-            jQuery("#mySelect").change(function () {
-                if (jQuery("#mySelect").val() == "linux") {
-                    jQuery(".linux").show();
-                } else {
-                    jQuery(".linux").hide();
-                }
-            })
         })
-    </script>
-</body>
-
+    })
+</script>
 </html>
